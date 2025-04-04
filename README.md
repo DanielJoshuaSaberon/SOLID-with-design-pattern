@@ -9,3 +9,7 @@ To adhere to the Dependency Inversion Principle (DIP) and ensure flexibility for
 Your solution should not violate other SOLID principles.
 
 Make sure you have a TestProgram that will validate the proposed refactored codes.
+
+
+### UML Class Diagram
+![ERD with colored entities (UML notation)](https://github.com/user-attachments/assets/8020f370-29bf-4d2f-aa9e-44c9106e5738)
