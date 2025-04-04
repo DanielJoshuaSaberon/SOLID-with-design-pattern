@@ -6,12 +6,12 @@ import SOLID3.Resource.InternetAccess;
 public class Student {
     private String lastName;
     private String firstName;
-    private Borrow borrowResource;
+    private Borrow borrowedResource;
 
-    public Student(String lastName, String firstName, Borrow borrowResource) {
+    public Student(String lastName, String firstName, Borrow borrowedResource) {
         this.lastName = lastName;
         this.firstName = firstName;
-        this.borrowResource = borrowResource;
+        this.borrowedResource = borrowedResource;
     }
 
     public String borrowResource(String title) {
@@ -20,12 +20,12 @@ public class Student {
         if (borrowResource instanceof InternetAccess) {
             output = "--------------------------------------------" +
                     "\nStudent: " + firstName + " " + lastName +
-                    "\nAccessing: " + borrowResource.borrow(title);
+                    "\nAccessing: " + borrowedResource.borrow(title);
         }
         else {
             output = "--------------------------------------------" +
                     "\nStudent: " + firstName + " " + lastName +
-                    "\nBorrowing: " + borrowResource.borrow(title);
+                    "\nBorrowing: " + borrowedResource.borrow(title);
         }
 
         return output;
