@@ -14,7 +14,7 @@ public class Student {
         this.borrowResource = borrowResource;
     }
 
-    public String borrow(String title) {
+    public String borrowResource(String title) {
         String output = "";
 
         if (borrowResource instanceof InternetAccess) {
