@@ -75,7 +75,7 @@ public class TestProgram {
 
 
             student = new Student(lastName, firstName, borrowResource);
-            System.out.println(student.borrow(title));
+            System.out.println(student.borrowResource(title));
         }
 
         scanner.close();
